@@ -10,7 +10,7 @@ LIB_EXT = .so			#linux shared lib
 #LIB_EXT = .a			#static lib
 
 #Base directory - adapt as needed
-PREFIX=/usr/local
+PREFIX=../built
 BIN_INSTALL=$(PREFIX)/bin
 LIB_INSTALL=$(PREFIX)/lib
 INC_INSTALL=$(PREFIX)/include
