@@ -5,7 +5,7 @@
 # flags for debugging
 #CFLAGS = -Wall -ansi -fno-common -pedantic -W -Wconversion -Wshadow -g
 # typical flags
-CFLAGS = -fno-common -O3 
+CFLAGS = -fno-common -O3 -fPIC 
 
 LOCAL_LIBRARIES = -lm
 

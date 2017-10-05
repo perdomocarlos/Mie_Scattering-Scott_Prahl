@@ -3,10 +3,10 @@
 #
 VERSION = 2-5-0
 
-CFLAGS = -Wall -ansi -dynamic -fno-common -g
+CFLAGS = -Wall -ansi -dynamic -fno-common -g -fPIC
 
-LIB_EXT = .dylib		#MacOS X shared lib
-#LIB_EXT = .so			#linux shared lib
+#LIB_EXT = .dylib		#MacOS X shared lib
+LIB_EXT = .so			#linux shared lib
 #LIB_EXT = .a			#static lib
 
 #Base directory - adapt as needed
@@ -16,10 +16,10 @@ LIB_INSTALL=$(PREFIX)/lib
 INC_INSTALL=$(PREFIX)/include
 MMA_INSTALL=/Users/prahl/Library/Mathematica/Applications/Optics
 
-#SHARED_LIB_OPT = -shared       #for redhat
-SHARED_LIB_OPT = -bundle -flat_namespace -undefined suppress
-DYNAMIC_LIB_OPT = -dynamiclib -install_name /usr/local/lib/libmie.dylib \
-                  -compatibility_version 2.0 -current_version 2.0.0
+SHARED_LIB_OPT = -shared       #for redhat
+#SHARED_LIB_OPT = -bundle -flat_namespace -undefined suppress
+#DYNAMIC_LIB_OPT = -dynamiclib -install_name /usr/local/lib/libmie.dylib \
+#                  -compatibility_version 2.0 -current_version 2.0.0
 
 MAIN = Makefile README.md
 
